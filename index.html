@@ -13,95 +13,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="assets\fontawesome\css\all.min.css">
+        
     <title>Roshen Perera</title>
 </head>
 
 <body>
-<header>
-    <nav>
-        <div class="navi">
-            <a href="#home"><img src="assets/images/roshen_logo.png" alt="logo" title="logo" "></a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact Me</a>
-        </div>
+<header class="header">
+    <nav class="nav-header">
+        <ul>
+            <li><a href="#home"><img src="assets/images/roshen_logo.png" alt="logo" title="logo" "></a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="#services">Services</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact Me</a></li>
+            <li class="menu" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+            
+        </ul> 
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href=""><i class="fa-solid fa-x fa-2x"></i></a></li>
+            <li><a href="#home"><img src="assets/images/roshen_logo.png" alt="logo" title="logo" "></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li></li>
+        </ul> 
     </nav>
 </header>
 <div id = "home" class="home">
-    <section>
+    <div class="leftsection">
         <p class="hello" >Hello, I' am </p>
         <h1 class="roshen">Roshen Perera</h1>
-        <p class="hello" >A Full-Stack Developer </p>
+        <p class="hello" style="font-weight: bold;">A Full-Stack Developer </p>
         <p>A passionate software engineering student dedicated to mastering the intricacies of code and design.</p>
-        <a href="https://github.com/Roshen-Perera" target="_blank"><img src="assets/images/icons8-github-48.png" alt="github"></a>
-        <a href="https://www.linkedin.com/in/roshenperera/" target="_blank"><img src="assets/images/icons8-linkedin-48.png" alt="linkedin"></a>
-        <a href="https://medium.com/@roshenperera" target="_blank"><img src="assets/images/icons8-medium-50.png" alt="medium"></a>
-        <a href="https://twitter.com/Roshen_5495" target="_blank"><img src="assets/images/icons8-twitterx-50.png" alt="twitterx"></a>        
+        <div class="SOCIAL">
+            <a href="https://github.com/Roshen-Perera" target="_blank"><img src="assets/images/icons8-github-48.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/roshenperera/" target="_blank"><img src="assets/images/icons8-linkedin-48.png" alt="linkedin"></a>
+            <a href="https://medium.com/@roshenperera" target="_blank"><img src="assets/images/icons8-medium-50.png" alt="medium"></a>
+            <a href="https://twitter.com/Roshen_5495" target="_blank"><img src="assets/images/icons8-twitterx-50.png" alt="twitterx"></a> 
+        </div>
+               
         <br>
-        <button>Hire Me</button>    
-    </section>
+        <button class="button">Hire Me</button>    
+    </div>
+    <div class="rightsection">
+        <img src="assets/images/image 5.png" alt="roshen" width="330px" height="400px">
+    </div>
 </div>
-<hr>
+
 <div id="about" class="about">
     <h1>About Me</h1>
-    <section>
-        <h1>A bit of my self</h1>
-        <p>Hi, I’ m Roshen Perera, a Software Engineer. I am from Avissawella, Sri Lanka. I have a passion for the IT industry and love creating your products or services that your value proposition. I have two years of experience in this industry. I’m always eager to learn new things and take on new challenges. You can check some of my work in the Projects section.. Thank you for visiting my website!</p>
-    </section>
+    <div class="aboutMe">
+        <section>
+            <h2>A bit of my self</h2>
+            <p>Hi, I’ m Roshen Perera, a Software Engineer. I am from Avissawella, Sri Lanka. I have a passion for the IT industry and love creating your products or services that your value proposition. I have two years of experience in this industry. I’m always eager to learn new things and take on new challenges. You can check some of my work in the Projects section.. Thank you for visiting my website!</p>
+        </section>
+            
+        <section class="skills">
+            <h2>My Skills</h2>
+            <div class="about-icons">
+                <i class="fa-brands fa-java fa-5x"></i>
+                <img src="assets/images/icons8-mysql-50.png">
+                <i class="fa-brands fa-git-alt fa-5x"></i>
+                <i class="fa-brands fa-html5 fa-5x"></i>
+                <i class="fa-brands fa-css3-alt fa-5x"></i>
+                <i class="fa-brands fa-js fa-5x"></i>
+            </div>
+        </section>
+    </div>
+    <div class="experience">
+        <section>
+            <h2>Assignments</h2>
+            <div class="grid">
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </section>
         
-    <section>
-        <h1>My Skill</h1>
-        <img src="assets/images/icons8-java-50.png">
-        <img src="assets/images/icons8-mysql-50.png">
-        <img src="assets/images/icons8-html-5-50.png">
-        <img src="assets/images/icons8-css-50.png">
-        <img src="assets/images/icons8-git-50.png">
-    </section>
-    
-    <section>
-        <h1>Assignments</h1>
-        <div>
-            <div>
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
+        <section>
+            <h2>Certificates</h2>
+            <div class="grid">
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
             </div>
-            <div>
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-            </div>
-            <div>
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-            </div>
-        </div>
-        
-    </section>
-    
-    <section>
-        <h1>Certificates</h1>
-        <div>
-            <div>
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-            </div>
-            <div>
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-            </div>
-            <div>
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-                <img src="assets/images/rec.png">
-            </div>
-        </div>
-    </section>
+        </section>
+    </div> -->
 </div>
 <div id="services" class="services">
     <h1>Our Services</h1>
@@ -121,46 +150,48 @@
 
 <div id="projects" class="projects">
     <h1>Projects</h1>
-    <article>
-        <img src="assets/images/rec.png">
-        <div>
-            <h3>Stock Management System(CLI Based)</h3>
-            <p>This is a CLI based Stock Management System.</p>
-            <a href=""><button>LINK</button></a>
-        </div>
-    </article>
-    <article>
-        <img src="assets/images/rec.png">
-        <div>
-            <h3>Connect 4 Game</h3>
-            <p>This is a CLI based Stock Management System.</p>
-            <a href="https://github.com/Roshen-Perera/Connect-4-Game" target="_blank"><button>LINK</button></a>
-        </div>
-    </article>
-    <article>
-        <img src="assets/images/rec.png">
-        <div>
-            <h3>Hardware Store Management System</h3>
-            <p>This is a hardware store management system made using MVC Architecture.</p>
-            <a href="https://github.com/Roshen-Perera/Hardware-Store-Management-System-MVC-Architecture" target="_blank"><button>LINK</button></a>
-        </div>
-    </article>
-    <article>
-        <img src="assets/images/rec.png">
-        <div>
-            <h3>Hardware Store Management System (Layered Architecture)</h3>
-            <p>This is a hardware store management system made using Layered Architecture.</p>
-            <a href="https://github.com/Roshen-Perera/Hardware-Store-Management-System-Layered-Architecture" target="_blank"><button>LINK</button></a>
-        </div>
-    </article>
-    <article>
-        <img src="assets/images/rec.png">
-        <div>
-            <h3>Live Chat Application</h3>
-            <p>This is a live chat Application made using client-server Architecture.</p>
-            <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><button>LINK</button></a>
-        </div>
-    </article>
+    <div class="project-grid">
+        <article>
+            <img src="assets/images/rec.png">
+            <div>
+                <h3>Stock Management System(CLI Based)</h3>
+                <p>This is a CLI based Stock Management System.</p>
+                <a href=""><button>LINK</button></a>
+            </div>
+        </article>
+        <article>
+            <img src="assets/images/rec.png">
+            <div>
+                <h3>Connect 4 Game</h3>
+                <p>This is a CLI based Stock Management System.</p>
+                <a href="https://github.com/Roshen-Perera/Connect-4-Game" target="_blank"><button>LINK</button></a>
+            </div>
+        </article>
+        <article>
+            <img src="assets/images/rec.png">
+            <div>
+                <h3>Hardware Store Management System</h3>
+                <p>This is a hardware store management system made using MVC Architecture.</p>
+                <a href="https://github.com/Roshen-Perera/Hardware-Store-Management-System-MVC-Architecture" target="_blank"><button>LINK</button></a>
+            </div>
+        </article>
+        <article>
+            <img src="assets/images/rec.png">
+            <div>
+                <h3>Hardware Store Management System (Layered Architecture)</h3>
+                <p>This is a hardware store management system made using Layered Architecture.</p>
+                <a href="https://github.com/Roshen-Perera/Hardware-Store-Management-System-Layered-Architecture" target="_blank"><button>LINK</button></a>
+            </div>
+        </article>
+        <article>
+            <img src="assets/images/rec.png">
+            <div>
+                <h3>Live Chat Application</h3>
+                <p>This is a live chat Application made using client-server Architecture.</p>
+                <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><button>LINK</button></a>
+            </div>
+        </article>
+    </div>
 </div>
 <div id="contact" class="contact">
     <h1>Contact Me</h1>
@@ -169,7 +200,7 @@
     <input type="email" placeholder="Email Address">
     <input type="number" placeholder="Mobile Number">
     <input type="text" placeholder="Your Message">
-    <button id="contact" class="contact">Contact Me</button>
+    <button id="button" class="button">Contact Me</button>
 </div>
 <footer>
     <section id="footupsec" class="footupsec">
@@ -190,5 +221,16 @@
         <h3>© Copyright 2024. Made by <span>Roshen Perera</span></h3>
     </section>
 </footer>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+    }
+
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none'
+    }
+</script>
 </body>
 </html>
