@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+body{
+    color: white;
+    background-color: #00051E;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: #00072C;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li{
+  height: 70px;
+}
+
+nav a{
+  font-size: 20px;
+  font-weight: bold;
+  height: 100%;
+  padding: 0 30px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  
+}
+/* header>nav>ul{
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-self: center;
+  font-weight: bold;
+  position: relative;
+  
+} */
+
+nav li:nth-child(1){
+  margin-right: auto;
+}
+
+a:link {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: aqua;
+}
+
+a:active {
+  color: yellow;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 270px;
+  z-index: 999;
+  background-color: #00072ccc;
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+.menu{
+  display: none;
+}
+
+@media(max-width:845px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+}
+
+/* CSS */
+.button {
+  font-style: bold;
+  background-color: aqua;
+  border-radius: 8px;
+  text-align: center;
+  padding:15px;
+  min-height:50px; 
+  min-width: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: relative;
+  top: 40px;
+  margin-bottom: 70px;
+}
+
+
+.button:hover {
+  box-shadow: aqua 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.button:active {
+  background-color: yellow;
+  box-shadow: yellow 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0 2.6rem;
+  }
+}
+
+.aboutMe{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.aboutMe>section>p{
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.aboutMe>section{
+  margin: 30px;
+}
+
+.about>h1{
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+}
+
+h2{
+  font-size: 30px;
+}
+
+
+
+.about-icons{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-icons>i:nth-child(4){
+  margin-top: 40px;
+}
+.about-icons>i:nth-child(5){
+  margin-top: 40px;
+}
+.about-icons>i:nth-child(6){
+  margin-top: 40px;
+}
+
+
+.about>h1{
+  padding-top: 30px;
+}
+
+.experience{
+  margin: 30px;
+  align-content: center;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (max-width: 1200px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 800px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.grid>div{
+  width: 350px;
+  height: 180px;
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: aqua;
+}
+
+
+
+/*Home Section*/
+
+.home{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.leftsection{
+  margin: 25px;
+}
+
+.leftsection>h1{
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.leftsection>p{
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.leftsection>div{
+  margin-top: 40px;
+}
+
+.leftsection>div>a{
+  margin-right: 30px;
+}
+
+@media all and (max-width: 760px)  {
+  .home{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 40px;
+  }
+
+  .aboutMe{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
