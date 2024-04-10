@@ -277,42 +277,42 @@ a:active {
 }
 
 .web{
-  background: url(assets/images/web.jpg);
+  background: url(assets/images/services/web.jpg);
   background-repeat: no-repeat;
   background-size: cover;/* length, cover, contain */
   background-position: center;
 }
 
 .android{
-  background: url(assets/images/android.jpg);
+  background: url(assets/images/services/android.jpg);
   background-repeat: no-repeat;
   background-size: cover;/* length, cover, contain */
   background-position: center;
 }
 
 .ios{
-  background: url(assets/images/ios.png);
+  background: url(assets/images/services/ios.png);
   background-repeat: no-repeat;
   background-size: cover;/* length, cover, contain */
   background-position: center;
 }
 
 .network{
-  background: url(assets/images/net.jpg);
+  background: url(assets/images/services/net.jpg);
   background-repeat: no-repeat;
   background-size: cover;/* length, cover, contain */
   background-position: center;
 }
 
 .data{
-  background: url(assets/images/data.jpg);
+  background: url(assets/images/services/data.jpg);
   background-repeat: no-repeat;
   background-size: cover;/* length, cover, contain */
   background-position: center;  
 }
 
 .business{
-  background: url(assets/images/business.webp);
+  background: url(assets/images/services/business.webp);
   background-repeat: no-repeat;
   background-size: cover;/* length, cover, contain */
   background-position: center;
@@ -376,9 +376,21 @@ a:active {
   margin: 50px;
 }
 
+@media all and (max-width: 1200px){
+  .project-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 800px){
+  .project-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .project-grid .project{
   position: relative;
-  border-radius: 2rem;
+  border-radius: 1rem;
   overflow: hidden;
   display: flex;
 }
@@ -399,7 +411,7 @@ a:active {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), aqua);
+  background: linear-gradient(rgba(0, 0, 0, .1), black);
   display: flex;
   justify-content: center;
   align-items: center;
