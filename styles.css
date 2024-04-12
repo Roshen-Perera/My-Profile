@@ -67,6 +67,10 @@ a:active {
   color: yellow;
 }
 
+span{
+  color: aqua;
+}
+
 .sidebar{
   position: fixed;
   top: 0;
@@ -450,101 +454,46 @@ a:active {
   border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.projects{
-  padding-top: 30px;
-  margin: 40px;
+footer{
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #00072C;
 }
 
-.projects>h1{
-  display: flex;
-  font-size: 40px;
-  justify-content: center;
-}
 
-.project-grid{
-}
-.project>div>p{
-  margin-left: 40px;
-  margin-right: 60px;
-}
-.project>div>h3{
-  margin-left: 40px;
-}
-.project>div>a{
-  margin-left: 40px;
-}
-.project-grid1{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.project-grid2{
+
+
+
+.footupsec{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.project{
-  border: #FFFFFF solid 2px;
-  margin: 40px;
-  border-radius: 20px 20px 20px 20px;
+.rightsec>div>a{
+  margin-right: 20px;
 }
 
-.cli{
-  background: url(assets/images/android.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain
-  background-position: center;
-  margin: 40px;
-  width: 300px;
-  height: 180px;
+
+.footicons{
+  display: flex;
+  justify-content: end;
 }
-.c4g{
-  background: url(assets/images/android.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain
-  background-position: center;
-  margin: 40px;
-  width: 300px;
-  height: 180px;
+
+.footh3{
+  display: flex;
+  margin-right: 20px;
+  justify-content: end;
 }
-.hw-mvc{
-  background: url(assets/images/android.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain
-  background-position: center;
-  margin: 40px;
-  width: 300px;
-  height: 180px;
+
+.footblwsec h3{
+ text-align: center;
 }
-.hw-lay{
-  background: url(assets/images/android.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain
-  background-position: center;
-  margin: 40px;
-  width: 300px;
-  height: 180px;
+
+.footupsec>div>div>h3{
+  margin-bottom: 20px;
+  font-size: 25px;
 }
-.chat{
-  background: url(assets/images/android.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain
-  background-position: center;
-  margin: 40px;
-  width: 300px;
-  height: 180px;
-} */
+
+.footupsec>div>p{
+  font-size: 20px;
+}
