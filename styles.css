@@ -40,15 +40,12 @@ nav a{
   align-items: center;
   
 }
-/* header>nav>ul{
-  list-style: none;
-  display: flex;
-  justify-content: end;
-  align-self: center;
-  font-weight: bold;
-  position: relative;
-  
-} */
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 nav li:nth-child(1){
   margin-right: auto;
@@ -66,6 +63,8 @@ a:hover {
 a:active {
   color: yellow;
 }
+
+
 
 span{
   color: aqua;
@@ -105,6 +104,10 @@ span{
   .menu{
     display: block;
   }
+}
+
+.content{
+  margin-top: 70px;
 }
 
 /* CSS */
@@ -161,6 +164,10 @@ span{
 
 .aboutMe>section{
   margin: 30px;
+}
+
+.about{
+  padding-top: 60px;
 }
 
 .about>h1{
@@ -266,7 +273,7 @@ span{
   }
 }
 .services{
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .services>h1{
@@ -363,12 +370,13 @@ span{
 }
 
 .projects{
-
+    padding-top: 40px;
 }
 
 .projects h1{
   padding-top: 4rem;
   margin-bottom: 3rem;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -461,16 +469,20 @@ footer{
 }
 
 
-
-
-
 .footupsec{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
+@media all and (max-width: 600px){
+  .footupsec{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .rightsec>div>a{
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 
@@ -481,12 +493,13 @@ footer{
 
 .footh3{
   display: flex;
-  margin-right: 20px;
+  margin-right: 10px;
   justify-content: end;
 }
 
 .footblwsec h3{
- text-align: center;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .footupsec>div>div>h3{
@@ -497,3 +510,47 @@ footer{
 .footupsec>div>p{
   font-size: 20px;
 }
+
+.contact h1{
+  padding-top: 4rem;
+  margin-bottom: 3rem;
+  font-size: 40px;
+  text-align: center;
+}
+
+.contact{
+  padding-top: 40px;
+  width: 100%;
+}
+
+.contact form{
+  text-align: center;
+  max-width: 80vw;
+  margin: 1rem auto;
+  margin-bottom: 3rem;
+}
+
+.contact form input,
+.contact form textarea{
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #5d658d;
+  margin-bottom: .8rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 1;
+  color: white;
+}
+
+textarea::placeholder {
+  font-weight: bold;
+  opacity: 1;
+  color: white;
+}
+
+
