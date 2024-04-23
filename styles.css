@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/komika-axis');
+
 
 
 body{
     color: white;
     background-color: #00051E;
     font-family: "Outfit", sans-serif;
+    
     font-optical-sizing: auto;
     font-style: normal;
     
@@ -63,12 +66,6 @@ a:active {
   color: yellow;
 }
 
-
-
-span{
-  color: aqua;
-}
-
 .sidebar{
   position: fixed;
   top: 0;
@@ -106,7 +103,7 @@ span{
 }
 
 .content{
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 /* CSS */
@@ -123,7 +120,7 @@ span{
   border-style: none;
   color: #FFFFFF;
   cursor: pointer;
-  margin-top: 35px;
+  margin-top: 10px;
   margin-bottom: 70px;
 }
 
@@ -169,7 +166,7 @@ span{
 }
 
 .about>h1{
-  padding-top: 30px;
+  padding-top: 40px;
   display: flex;
   font-size: 40px;
   justify-content: center;
@@ -213,7 +210,7 @@ span{
   }
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 768px){
   .grid{
     grid-template-columns: repeat(1, 1fr);
   }
@@ -236,8 +233,92 @@ span{
   grid-template-columns: repeat(2, 1fr);
 }
 
+.head{
+  color: aqua;
+}
+
+.cont{
+
+}
+
+.cont .text{
+  position: relative;
+  font-size: 30px;
+  color: aqua;
+  font-family: 'Komika Axis', sans-serif;   
+}
+
+.cont .text.first-text{
+  color: white;
+}
+
+.text.sec-text:after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #00051E;
+  border-left: 2px solid yellow;
+  right: -8px;
+  animation: cursor .5s infinite, typing 20s steps(14) infinite;
+}
+
+.text.sec-text:before{
+  content: "Full-Stack Developer";
+    color: aqua;
+    animation: words 20s infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid aqua;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+      content: "Full-Stack Developer";
+  }
+  21%,40%{
+      content: "Web Developer";
+  }
+  41%,60%{
+      content: "Designer";
+  }
+  61%,80%{
+      content: "YouTuber";
+  }
+  81%,100%{
+      content: "Gamer";
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}
+
+@keyframes animate {
+  40%, 60%{
+    left: 100%;
+  }
+
+  100%{
+    left: 0%;
+  }
+}
+
+
+.roshen{
+  font-family: 'Komika Axis', sans-serif;  
+}
+
 .leftsection{
-  margin: 25px;
+  margin: 20px;
 }
 
 .leftsection>h1{
@@ -251,14 +332,18 @@ span{
 }
 
 .leftsection>div{
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .leftsection>div>a{
   margin-right: 30px;
 }
 
-@media all and (max-width: 760px)  {
+.rightsection>img{
+  margin-left: 100px;
+}
+
+@media all and (max-width: 768px)  {
   .home{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -346,7 +431,7 @@ span{
   }
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 768px){
   .services-grid{
     grid-template-columns: repeat(1, 1fr);
   }
@@ -392,7 +477,7 @@ span{
   }
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 768px){
   .project-grid{
     grid-template-columns: repeat(1, 1fr);
   }
