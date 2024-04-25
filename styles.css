@@ -603,6 +603,8 @@ a:active {
   border: none;
   border-radius: 5px;
   padding: 1rem;
+  resize: none;
+  
 }
 
 input::placeholder {
