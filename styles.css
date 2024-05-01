@@ -1,41 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/komika-axis');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/komika-axis");
 
-
-
-body{
-    color: white;
-    font-family: "Outfit", sans-serif;
-    background-color: #00051E;
-    font-optical-sizing: auto;
-    font-style: normal;
-    
+body {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  background-color: #00051e;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-nav{
-  background-color: #00072C;
+nav {
+  background-color: #00072c;
 }
 
-nav ul{
+nav ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
 }
 
-nav li{
+nav li {
   height: 70px;
 }
 
-nav a{
+nav a {
   font-size: 20px;
   font-weight: bold;
   height: 100%;
@@ -44,16 +41,15 @@ nav a{
   text-decoration: none;
   display: flex;
   align-items: center;
-  
 }
-.navbar{
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
 }
 
-nav li:nth-child(1){
+nav li:nth-child(1) {
   margin-right: auto;
 }
 
@@ -70,9 +66,7 @@ a:active {
   color: yellow;
 }
 
-
-
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   right: 0;
@@ -87,28 +81,28 @@ a:active {
   justify-content: start;
 }
 
-.sidebar li{
+.sidebar li {
   width: 100%;
 }
 
-.sidebar a{
+.sidebar a {
   width: 100%;
 }
 
-.menu{
+.menu {
   display: none;
 }
 
-@media(max-width:845px){
-  .hideOnMobile{
+@media (max-width: 845px) {
+  .hideOnMobile {
     display: none;
   }
-  .menu{
+  .menu {
     display: block;
   }
 }
 
-.content{
+.content {
   margin-top: 60px;
 }
 
@@ -118,32 +112,32 @@ a:active {
   background-color: aqua;
   border-radius: 8px;
   text-align: center;
-  padding:15px;
-  min-height:50px; 
+  padding: 15px;
+  min-height: 50px;
   min-width: 100px;
   font-size: 18px;
   font-weight: bold;
   border-style: none;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 70px;
 }
 
-.button>a{
-  color: #FFF;
+.button > a {
+  color: #fff;
   text-decoration: none;
 }
 
 .button:hover {
   box-shadow: aqua 0 1px 30px;
-  transition-duration: .1s;
+  transition-duration: 0.1s;
 }
 
 .button:active {
   background-color: yellow;
   box-shadow: yellow 0 1px 30px;
-  transition-duration: .1s;
+  transition-duration: 0.1s;
 }
 
 @media (min-width: 768px) {
@@ -152,178 +146,195 @@ a:active {
   }
 }
 
-.two-grid{
+.two-grid {
   display: flex;
   justify-content: center;
 }
 
 /*Home Section*/
 
-.home{
+.home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.head{
+.head {
   color: aqua;
 }
-.cont .text{
+.cont .text {
   position: relative;
   font-size: 30px;
   color: aqua;
-  font-family: 'Komika Axis', sans-serif;   
+  font-family: "Komika Axis", sans-serif;
 }
 
-.cont .text.first-text{
+.cont .text.first-text {
   color: white;
 }
 
-.text.sec-text:after{
+.text.sec-text:after {
   content: "";
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: #00051E;
+  background-color: #00051e;
   right: -8px;
   border-left: 2px solid yellow;
-  animation: cursor .5s infinite, typing 20s steps(14) infinite;
+  animation: cursor 0.5s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
-  to{
-      border-left: 2px solid aqua;
+  to {
+    border-left: 2px solid aqua;
   }
 }
 
-.text.sec-text:before{
+.text.sec-text:before {
   content: "Full-Stack Developer";
-    color: aqua;
-    animation: words 20s infinite;
+  color: aqua;
+  animation: words 20s infinite;
 }
 
 @keyframes words {
-  0%,20%{
-      content: "Full-Stack Developer";
+  0%,
+  20% {
+    content: "Full-Stack Developer";
   }
-  21%,40%{
-      content: "Web Developer";
+  21%,
+  40% {
+    content: "Web Developer";
   }
-  41%,60%{
-      content: "Designer";
+  41%,
+  60% {
+    content: "Designer";
   }
-  61%,80%{
-      content: "YouTuber";
+  61%,
+  80% {
+    content: "YouTuber";
   }
-  81%,100%{
-      content: "Gamer";
+  81%,
+  100% {
+    content: "Gamer";
   }
 }
 
 @keyframes typing {
-  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-      width: 0;
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
   }
-  5%,20%,25%,40%,45%,60%,65%,80%,85%{
-      width: calc(100% + 8px);
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
   }
 }
 
 @keyframes animate {
-  40%, 60%{
+  40%,
+  60% {
     left: 100%;
   }
 
-  100%{
+  100% {
     left: 0%;
   }
 }
 
-.roshen{
-  font-family: 'Komika Axis', sans-serif;  
+.roshen {
+  font-family: "Komika Axis", sans-serif;
   font-size: 40px;
 }
 
-.leftsection{
+.leftsection {
   margin: 40px;
   width: 420px;
 }
 
-.leftsection>h1{
+.leftsection > h1 {
   margin-top: 20px;
   font-size: 50px;
 }
 
-.leftsection>p{
+.leftsection > p {
   margin-top: 20px;
   font-size: 25px;
 }
 
-.leftsection>div{
+.leftsection > div {
   margin-top: 20px;
 }
 
-.leftsection>div>a{
+.leftsection > div > a {
   margin-right: 20px;
 }
 
-.social-icon{
-  transition: .3s ease;
+.social-icon {
+  transition: 0.3s ease;
 }
 
-.social-icon:hover{
+.social-icon:hover {
   transform: translateY(-20%);
 }
 
-.social-icon:active{
+.social-icon:active {
   transform: scale(1.1);
 }
 
-.rightsection>img{
-  margin-left: 50px;
-  margin-top: 100px;
-}
-
-
-@media all and (max-width: 768px)  {
-  .home{
+@media all and (max-width: 768px) {
+  .home {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 40px;
   }
 
-  .aboutMe{
+  .aboutMe {
     display: grid;
-    grid-template-columns: repeat(1, 1fr)
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.container-about{
+.container-about {
   display: flex;
   justify-content: center;
   margin-left: 80px;
   margin-right: 80px;
 }
 
-.aboutMe{
+.aboutMe {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.aboutMe>section>p{
+.aboutMe > section > p {
   margin-top: 30px;
   font-size: 25px;
 }
 
-.aboutMe>section{
+.aboutMe > section {
   margin: 30px;
 }
 
-.about{
+.about {
   padding-top: 60px;
 }
 
-.about>h1{
+.about > h1 {
   padding-top: 40px;
   display: flex;
   font-size: 40px;
@@ -339,54 +350,54 @@ a:active {
     transform: translateX(0);
 } */
 
-.about-icons{
+.about-icons {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.about-icons>i:nth-child(4){
+.about-icons > i:nth-child(4) {
   margin-top: 40px;
 }
-.about-icons>i:nth-child(5){
+.about-icons > i:nth-child(5) {
   margin-top: 40px;
 }
-.about-icons>i:nth-child(6){
+.about-icons > i:nth-child(6) {
   margin-top: 40px;
 }
 
-.experience{
+.experience {
   margin: 30px;
 }
 
-.experience>section>h2{
+.experience > section > h2 {
   display: flex;
   justify-content: center;
 }
 
-.grid{
+.grid {
   display: grid;
   margin: 30px;
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media all and (max-width: 1200px){
-  .grid{
+@media all and (max-width: 1200px) {
+  .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media all and (max-width: 768px){
-  .grid{
+@media all and (max-width: 768px) {
+  .grid {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .aboutMe{
+  .aboutMe {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.grid>div{
+.grid > div {
   width: 350px;
   height: 180px;
   margin: 10px;
@@ -396,96 +407,96 @@ a:active {
 
 /*Services*/
 
-.services{
+.services {
   padding-top: 100px;
 }
 
-.services>h1{
+.services > h1 {
   display: flex;
   font-size: 40px;
   justify-content: center;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
 }
 
-.web{
+.web {
   background: url(assets/images/services/web.jpg);
   background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain */
+  background-size: cover; /* length, cover, contain */
   background-position: center;
 }
 
-.android{
+.android {
   background: url(assets/images/services/android.jpg);
   background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain */
+  background-size: cover; /* length, cover, contain */
   background-position: center;
 }
 
-.ios{
+.ios {
   background: url(assets/images/services/ios.png);
   background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain */
+  background-size: cover; /* length, cover, contain */
   background-position: center;
 }
 
-.network{
+.network {
   background: url(assets/images/services/net.jpg);
   background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain */
+  background-size: cover; /* length, cover, contain */
   background-position: center;
 }
 
-.data{
+.data {
   background: url(assets/images/services/data.jpg);
   background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain */
-  background-position: center;  
-}
-
-.business{
-  background: url(assets/images/services/business.webp);
-  background-repeat: no-repeat;
-  background-size: cover;/* length, cover, contain */
+  background-size: cover; /* length, cover, contain */
   background-position: center;
 }
 
-.services-grid{
+.business {
+  background: url(assets/images/services/business.webp);
+  background-repeat: no-repeat;
+  background-size: cover; /* length, cover, contain */
+  background-position: center;
+}
+
+.services-grid {
   padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.services-grid>div{
+.services-grid > div {
   width: 350px;
   height: 180px;
   margin: 20px;
   border-radius: 10px 10px 10px 10px;
 }
 
-@media all and (max-width: 1200px){
-  .services-grid{
+@media all and (max-width: 1200px) {
+  .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media all and (max-width: 768px){
-  .services-grid{
+@media all and (max-width: 768px) {
+  .services-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.box{ 
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.box:hover{ 
+.box:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,18 +506,18 @@ a:active {
 
 /*Projects*/
 
-.projects{
-    padding-top: 40px;
+.projects {
+  padding-top: 40px;
 }
 
-.projects h1{
+.projects h1 {
   padding-top: 4rem;
   margin-bottom: 3rem;
   font-size: 40px;
   text-align: center;
 }
 
-.project-grid{
+.project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -514,93 +525,93 @@ a:active {
   margin: 50px;
 }
 
-@media all and (max-width: 1200px){
-  .project-grid{
+@media all and (max-width: 1200px) {
+  .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media all and (max-width: 768px){
-  .project-grid{
+@media all and (max-width: 768px) {
+  .project-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.project-grid .project{
+.project-grid .project {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
 }
 
-.project img{
+.project img {
   width: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.project:hover img{
+.project:hover img {
   width: 100%;
   transform: scale(1.1);
 }
 
-.project .project-layer{
+.project .project-layer {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), black);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), black);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 .1rem;
+  padding: 0 0.1rem;
   transform: translateY(100%);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.project:hover .project-layer{
+.project:hover .project-layer {
   transform: translateY(0);
 }
-.project:active .project-layer{
+.project:active .project-layer {
   transform: translateY(0);
 }
 
-.project-layer h3{
+.project-layer h3 {
   font-size: 1.3rem;
   text-align: center;
 }
 
-.project-layer p{
+.project-layer p {
   font-size: 1rem;
-  margin: .3rem 0 1rem;
+  margin: 0.3rem 0 1rem;
   text-align: center;
 }
 
-.project-layer a{
+.project-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: black;
   border-radius: 50%;
 }
 
-.contact h1{
+.contact h1 {
   padding-top: 4rem;
   margin-bottom: 3rem;
   font-size: 40px;
   text-align: center;
 }
 
-.contact{
+.contact {
   padding-top: 40px;
   width: 100%;
 }
 
-.contact form{
+.contact form {
   text-align: center;
   max-width: 80vw;
   margin: 1rem auto;
@@ -608,16 +619,15 @@ a:active {
 }
 
 .contact form input,
-.contact form textarea{
+.contact form textarea {
   width: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #5d658d;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   border: none;
   border-radius: 5px;
   padding: 1rem;
   resize: none;
-  
 }
 
 input::placeholder {
@@ -634,181 +644,175 @@ textarea::placeholder {
 
 /*Footer*/
 
-footer{
+footer {
   margin-top: 50px;
   padding: 20px;
-  background-color: #00072C;
+  background-color: #00072c;
   position: relative;
 }
 
-
-.footupsec{
+.footupsec {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-@media all and (max-width: 600px){
-  .footupsec{
+@media all and (max-width: 600px) {
+  .footupsec {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.rightsec>div>a{
+.rightsec > div > a {
   margin-right: 20px;
 }
 
-
-.footicons{
+.footicons {
   display: flex;
   justify-content: end;
 }
 
-.footh3{
+.footh3 {
   display: flex;
   margin-right: 10px;
   justify-content: end;
 }
 
-.footblwsec h3{
+.footblwsec h3 {
   padding-top: 20px;
   text-align: center;
 }
 
-.footupsec>div>div>h3{
+.footupsec > div > div > h3 {
   margin-bottom: 10px;
   font-size: 30px;
 }
 
-.footupsec>div>p{
+.footupsec > div > p {
   font-size: 20px;
   margin-top: 5px;
 }
 
-.footupsec>div>p>a{
+.footupsec > div > p > a {
   color: white;
   text-decoration: none;
 }
 
-.footupsec>div>p>a:hover{
+.footupsec > div > p > a:hover {
   color: aqua;
 }
 
-@media all and (max-width: 500px){
-  
-
-  .footicons{
+@media all and (max-width: 500px) {
+  .footicons {
     display: flex;
     justify-content: start;
   }
-  
-  .footh3{
+
+  .footh3 {
     display: flex;
     margin-right: 10px;
     justify-content: start;
   }
 }
 
-@media all and (max-width: 450px){
-  .about-icons{
+@media all and (max-width: 450px) {
+  .about-icons {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .leftsection{
+  .leftsection {
     width: 320px;
   }
-  
-  .leftsection>h1{
+
+  .leftsection > h1 {
     margin-top: 20px;
     font-size: 30px;
   }
-  .leftsection>p{
+  .leftsection > p {
     margin-top: 20px;
     font-size: 23px;
   }
-  .roshen{
-    font-family: 'Komika Axis', sans-serif;  
+  .roshen {
+    font-family: "Komika Axis", sans-serif;
     font-size: 40px;
   }
-  .cont .text{
+  .cont .text {
     position: relative;
     font-size: 25px;
     color: aqua;
-    font-family: 'Komika Axis', sans-serif;   
+    font-family: "Komika Axis", sans-serif;
   }
 
-  .rightsection>img{
+  .rightsection > img {
     padding: 30px;
   }
 
-  .aboutMe>section{
+  .aboutMe > section {
     margin: 0;
   }
 
-  .footupsec>div>div>h3{
+  .footupsec > div > div > h3 {
     margin-bottom: 10px;
     font-size: 20px;
   }
-  
-  .footupsec>div>p{
+
+  .footupsec > div > p {
     font-size: 15px;
     margin-top: 5px;
   }
-  
-
 }
 
-@media all and (max-width: 375px){
-  .leftsection>h1{
+@media all and (max-width: 375px) {
+  .leftsection > h1 {
     margin-top: 20px;
     font-size: 30px;
   }
-  .leftsection>p{
+  .leftsection > p {
     margin-top: 20px;
     font-size: 15px;
   }
-  .leftsection{
+  .leftsection {
     width: 280px;
   }
 
-  .roshen{
-    font-family: 'Komika Axis', sans-serif;  
+  .roshen {
+    font-family: "Komika Axis", sans-serif;
     font-size: 30px;
   }
-  .cont .text{
+  .cont .text {
     position: relative;
     font-size: 20px;
     color: aqua;
-    font-family: 'Komika Axis', sans-serif;   
+    font-family: "Komika Axis", sans-serif;
   }
-  .aboutMe{
+  .aboutMe {
     margin-top: 30px;
   }
-  
-  .aboutMe>section>p{
+
+  .aboutMe > section > p {
     margin-top: 30px;
     font-size: 15px;
   }
-  
-  .aboutMe>section{
+
+  .aboutMe > section {
     margin: 30px;
   }
-  
-  .about{
+
+  .about {
     padding-top: 0px;
   }
-  
-  .about>h1{
+
+  .about > h1 {
     display: flex;
     font-size: 40px;
     justify-content: center;
   }
-  .container-about{
+  .container-about {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .grid>div{
+  .grid > div {
     width: 280px;
     height: 150px;
     margin: 10px;
