@@ -244,8 +244,8 @@ a:active {
 }
 
 .leftsection{
-  margin: 20px;
-  width: 450px;
+  margin: 40px;
+  width: 420px;
 }
 
 .leftsection>h1{
@@ -255,7 +255,7 @@ a:active {
 
 .leftsection>p{
   margin-top: 20px;
-  font-size: 26px;
+  font-size: 25px;
 }
 
 .leftsection>div{
@@ -278,6 +278,12 @@ a:active {
   transform: scale(1.1);
 }
 
+.rightsection>img{
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+
 @media all and (max-width: 768px)  {
   .home{
     display: grid;
@@ -291,7 +297,15 @@ a:active {
   }
 }
 
+.container-about{
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
 .aboutMe{
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr)
 }
@@ -364,6 +378,10 @@ a:active {
 
 @media all and (max-width: 768px){
   .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .aboutMe{
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -677,9 +695,7 @@ footer{
 }
 
 @media all and (max-width: 500px){
-  .about-icons{
-    grid-template-columns: repeat(1, 1fr);
-  }
+  
 
   .footicons{
     display: flex;
@@ -693,10 +709,13 @@ footer{
   }
 }
 
-@media all and (max-width: 420px){
+@media all and (max-width: 450px){
+  .about-icons{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .leftsection{
-    margin: 20px;
-    width: 340px;
+    width: 320px;
   }
   
   .leftsection>h1{
@@ -717,9 +736,81 @@ footer{
     color: aqua;
     font-family: 'Komika Axis', sans-serif;   
   }
+
+  .rightsection>img{
+    padding: 30px;
+  }
+
+  .aboutMe>section{
+    margin: 0;
+  }
+
+  .footupsec>div>div>h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .footupsec>div>p{
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  
+
+}
+
+@media all and (max-width: 375px){
+  .leftsection>h1{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .leftsection>p{
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .leftsection{
+    width: 280px;
+  }
+
+  .roshen{
+    font-family: 'Komika Axis', sans-serif;  
+    font-size: 30px;
+  }
+  .cont .text{
+    position: relative;
+    font-size: 20px;
+    color: aqua;
+    font-family: 'Komika Axis', sans-serif;   
+  }
+  .aboutMe{
+    margin-top: 30px;
+  }
+  
   .aboutMe>section>p{
     margin-top: 30px;
-    font-size: 20px;
-    width: 180px;
+    font-size: 15px;
+  }
+  
+  .aboutMe>section{
+    margin: 30px;
+  }
+  
+  .about{
+    padding-top: 0px;
+  }
+  
+  .about>h1{
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+  }
+  .container-about{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .grid>div{
+    width: 280px;
+    height: 150px;
+    margin: 10px;
   }
 }
