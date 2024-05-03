@@ -341,15 +341,26 @@ a:active {
   font-size: 40px;
   justify-content: center;
 }
-/* 
+
+.hiddenL{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hiddenR{
+  opacity: 0;
+  transition: all 1s;
+}
+
 .hidden{
-    transform: translateX(-100%);
-    transition: all 1s;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .show{
+    opacity: 1;
     transform: translateX(0);
-} */
+}
 
 .about-icons {
   margin-top: 30px;
@@ -521,7 +532,6 @@ a:active {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
   gap: 2.5rem;
   margin: 50px;
 }
