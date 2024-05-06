@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/komika-axis");
+@import url('https://fonts.cdnfonts.com/css/rogue-hero');
+@import url('https://fonts.cdnfonts.com/css/mrrobot');
+@import url('https://fonts.cdnfonts.com/css/good-times-2');
+@import url('https://fonts.cdnfonts.com/css/blade-runner-movie-font');
+
 
 body {
   color: white;
@@ -7,6 +12,11 @@ body {
   background-color: #00051e;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+h1{
+  font-family: 'Good Times Rg', sans-serif;
+                                                                                     
 }
 
 html {
@@ -255,29 +265,37 @@ a:active {
   }
 }
 
-.roshen {
-  font-family: "Komika Axis", sans-serif;
+.roshenperera {
+  font-family: 'Rogue Hero', sans-serif;
   font-size: 40px;
 }
 
+.roshen{
+  color: rgb(184, 0, 0);
+}
+
+.perera{
+  color: rgb(207, 207, 33);
+}
+
 .leftsection {
-  padding-top: 30px;
+  padding-top: 20px;
   margin: 40px;
   width: 420px;
 }
 
 .leftsection > h1 {
-  margin-top: 20px;
+  margin-top: 22px;
   font-size: 50px;
 }
 
 .leftsection > p {
-  margin-top: 20px;
+  margin-top: 22px;
   font-size: 25px;
 }
 
 .leftsection > div {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .leftsection > div > a {
@@ -689,7 +707,7 @@ footer {
   justify-content: end;
 }
 
-.footblwsec h3 {
+.footblwsec h3 {                                                
   padding-top: 20px;
   text-align: center;
 }
