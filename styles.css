@@ -12,11 +12,12 @@ body {
   background-color: #00051e;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-x: hidden;
 }
 
-h1{
+h1 {
   font-family: 'Good Times Rg', sans-serif;
-                                                                                     
+
 }
 
 html {
@@ -24,6 +25,7 @@ html {
 }
 
 * {
+  
   margin: 0;
   padding: 0;
 }
@@ -52,6 +54,7 @@ nav a {
   display: flex;
   align-items: center;
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -107,6 +110,7 @@ a:active {
   .hideOnMobile {
     display: none;
   }
+
   .menu {
     display: block;
   }
@@ -134,7 +138,7 @@ a:active {
   margin-bottom: 70px;
 }
 
-.button > a {
+.button>a {
   color: #fff;
   text-decoration: none;
 }
@@ -171,6 +175,7 @@ a:active {
 .head {
   color: aqua;
 }
+
 .cont .text {
   position: relative;
   font-size: 30px;
@@ -206,22 +211,27 @@ a:active {
 }
 
 @keyframes words {
+
   0%,
   20% {
     content: "Full-Stack Developer";
   }
+
   21%,
   40% {
     content: "Web Developer";
   }
+
   41%,
   60% {
     content: "Designer";
   }
+
   61%,
   80% {
     content: "YouTuber";
   }
+
   81%,
   100% {
     content: "Gamer";
@@ -229,6 +239,7 @@ a:active {
 }
 
 @keyframes typing {
+
   10%,
   15%,
   30%,
@@ -241,6 +252,7 @@ a:active {
   95% {
     width: 0;
   }
+
   5%,
   20%,
   25%,
@@ -255,6 +267,7 @@ a:active {
 }
 
 @keyframes animate {
+
   40%,
   60% {
     left: 100%;
@@ -270,11 +283,11 @@ a:active {
   font-size: 40px;
 }
 
-.roshen{
+.roshen {
   color: rgb(184, 0, 0);
 }
 
-.perera{
+.perera {
   color: rgb(207, 207, 33);
 }
 
@@ -284,21 +297,21 @@ a:active {
   width: 420px;
 }
 
-.leftsection > h1 {
+.leftsection>h1 {
   margin-top: 22px;
   font-size: 50px;
 }
 
-.leftsection > p {
+.leftsection>p {
   margin-top: 22px;
   font-size: 25px;
 }
 
-.leftsection > div {
+.leftsection>div {
   margin-top: 22px;
 }
 
-.leftsection > div > a {
+.leftsection>div>a {
   margin-right: 20px;
 }
 
@@ -340,12 +353,12 @@ a:active {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.aboutMe > section > p {
+.aboutMe>section>p {
   margin-top: 30px;
   font-size: 25px;
 }
 
-.aboutMe > section {
+.aboutMe>section {
   margin: 30px;
 }
 
@@ -353,31 +366,31 @@ a:active {
   padding-top: 60px;
 }
 
-.about > h1 {
+.about>h1 {
   padding-top: 40px;
   display: flex;
   font-size: 40px;
   justify-content: center;
 }
 
-.hiddenL{
+.hiddenL {
   opacity: 0;
   transition: all 1s;
 }
 
-.hiddenR{
+.hiddenR {
   opacity: 0;
   transition: all 1s;
 }
 
-.hidden{
+.hidden {
   opacity: 0;
   transition: all 1s;
 }
 
-.show{
-    opacity: 1;
-    transform: translateX(0);
+.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .about-icons {
@@ -386,13 +399,15 @@ a:active {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.about-icons > i:nth-child(4) {
+.about-icons>i:nth-child(4) {
   margin-top: 40px;
 }
-.about-icons > i:nth-child(5) {
+
+.about-icons>i:nth-child(5) {
   margin-top: 40px;
 }
-.about-icons > i:nth-child(6) {
+
+.about-icons>i:nth-child(6) {
   margin-top: 40px;
 }
 
@@ -400,7 +415,7 @@ a:active {
   margin: 30px;
 }
 
-.experience > section > h2 {
+.experience>section>h2 {
   display: flex;
   justify-content: center;
 }
@@ -427,12 +442,184 @@ a:active {
   }
 }
 
-.grid > div {
-  width: 350px;
-  height: 180px;
-  margin: 10px;
-  border-radius: 10px 10px 10px 10px;
-  background-color: aqua;
+
+
+.certificates h1 {
+  padding-top: 4rem;
+  margin-bottom: 3rem;
+  font-size: 40px;
+  text-align: center;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin: 50px;
+}
+
+@media all and (max-width: 1200px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.certificates-grid .certificates {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.certificates img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+/* .certificates:hover img {
+  width: 100%;
+} */
+
+.certificates .certificates-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0.1rem;
+  transform: translateX(-100%);
+  transition: 0.5s ease;
+}
+
+.certificates:hover .certificates-layer {
+  transform: translateX(0);
+}
+
+.certificates:active .certificates-layer {
+  transform: translateX(0);
+}
+
+.certificates-layer h3 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.certificates-layer p {
+  font-size: 1rem;
+  margin: 0.3rem 0 1rem;
+  text-align: center;
+}
+
+.certificates-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 50%;
+}
+
+/*fffffffffffffffff*/
+
+.assignments h1 {
+  padding-top: 4rem;
+  margin-bottom: 3rem;
+  font-size: 40px;
+  text-align: center;
+}
+
+.assignments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin: 50px;
+}
+
+@media all and (max-width: 1200px) {
+  .assignments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .assignments-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.assignments-grid .assignments {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.assignments img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+/* .certificates:hover img {
+  width: 100%;
+} */
+
+.assignments .assignments-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0.1rem;
+  transform: translateX(-100%);
+  transition: 0.5s ease;
+}
+
+.assignments:hover .assignments-layer {
+  transform: translateX(0);
+}
+
+.assignments:active .assignments-layer {
+  transform: translateX(0);
+}
+
+.assignments-layer h3 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.assignments-layer p {
+  font-size: 1rem;
+  margin: 0.3rem 0 1rem;
+  text-align: center;
+}
+
+.assignments-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 50%;
 }
 
 /*Services*/
@@ -441,7 +628,7 @@ a:active {
   padding-top: 100px;
 }
 
-.services > h1 {
+.services>h1 {
   display: flex;
   font-size: 40px;
   justify-content: center;
@@ -455,42 +642,48 @@ a:active {
 .web {
   background: url(assets/images/services/web.jpg);
   background-repeat: no-repeat;
-  background-size: cover; /* length, cover, contain */
+  background-size: cover;
+  /* length, cover, contain */
   background-position: center;
 }
 
 .android {
   background: url(assets/images/services/android.jpg);
   background-repeat: no-repeat;
-  background-size: cover; /* length, cover, contain */
+  background-size: cover;
+  /* length, cover, contain */
   background-position: center;
 }
 
 .ios {
   background: url(assets/images/services/ios.png);
   background-repeat: no-repeat;
-  background-size: cover; /* length, cover, contain */
+  background-size: cover;
+  /* length, cover, contain */
   background-position: center;
 }
 
 .network {
   background: url(assets/images/services/net.jpg);
   background-repeat: no-repeat;
-  background-size: cover; /* length, cover, contain */
+  background-size: cover;
+  /* length, cover, contain */
   background-position: center;
 }
 
 .data {
   background: url(assets/images/services/data.jpg);
   background-repeat: no-repeat;
-  background-size: cover; /* length, cover, contain */
+  background-size: cover;
+  /* length, cover, contain */
   background-position: center;
 }
 
 .business {
   background: url(assets/images/services/business.webp);
   background-repeat: no-repeat;
-  background-size: cover; /* length, cover, contain */
+  background-size: cover;
+  /* length, cover, contain */
   background-position: center;
 }
 
@@ -500,7 +693,7 @@ a:active {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.services-grid > div {
+.services-grid>div {
   width: 350px;
   height: 180px;
   margin: 20px;
@@ -602,6 +795,7 @@ a:active {
 .project:hover .project-layer {
   transform: translateY(0);
 }
+
 .project:active .project-layer {
   transform: translateY(0);
 }
@@ -692,7 +886,7 @@ footer {
   }
 }
 
-.rightsec > div > a {
+.rightsec>div>a {
   margin-right: 20px;
 }
 
@@ -707,27 +901,27 @@ footer {
   justify-content: end;
 }
 
-.footblwsec h3 {                                                
+.footblwsec h3 {
   padding-top: 20px;
   text-align: center;
 }
 
-.footupsec > div > div > h3 {
+.footupsec>div>div>h3 {
   margin-bottom: 10px;
   font-size: 30px;
 }
 
-.footupsec > div > p {
+.footupsec>div>p {
   font-size: 20px;
   margin-top: 5px;
 }
 
-.footupsec > div > p > a {
+.footupsec>div>p>a {
   color: white;
   text-decoration: none;
 }
 
-.footupsec > div > p > a:hover {
+.footupsec>div>p>a:hover {
   color: aqua;
 }
 
@@ -753,18 +947,21 @@ footer {
     width: 350px;
   }
 
-  .leftsection > h1 {
+  .leftsection>h1 {
     margin-top: 20px;
     font-size: 30px;
   }
-  .leftsection > p {
+
+  .leftsection>p {
     margin-top: 20px;
     font-size: 23px;
   }
+
   .roshen {
     font-family: "Komika Axis", sans-serif;
     font-size: 40px;
   }
+
   .cont .text {
     position: relative;
     font-size: 25px;
@@ -772,34 +969,36 @@ footer {
     font-family: "Komika Axis", sans-serif;
   }
 
-  .rightsection > img {
+  .rightsection>img {
     padding: 30px;
   }
 
-  .aboutMe > section {
+  .aboutMe>section {
     margin: 0;
   }
 
-  .footupsec > div > div > h3 {
+  .footupsec>div>div>h3 {
     margin-bottom: 10px;
     font-size: 20px;
   }
 
-  .footupsec > div > p {
+  .footupsec>div>p {
     font-size: 15px;
     margin-top: 5px;
   }
 }
 
 @media all and (max-width: 375px) {
-  .leftsection > h1 {
+  .leftsection>h1 {
     margin-top: 20px;
     font-size: 30px;
   }
-  .leftsection > p {
+
+  .leftsection>p {
     margin-top: 20px;
     font-size: 15px;
   }
+
   .leftsection {
     width: 280px;
   }
@@ -808,22 +1007,24 @@ footer {
     font-family: "Komika Axis", sans-serif;
     font-size: 30px;
   }
+
   .cont .text {
     position: relative;
     font-size: 20px;
     color: aqua;
     font-family: "Komika Axis", sans-serif;
   }
+
   .aboutMe {
     margin-top: 30px;
   }
 
-  .aboutMe > section > p {
+  .aboutMe>section>p {
     margin-top: 30px;
     font-size: 15px;
   }
 
-  .aboutMe > section {
+  .aboutMe>section {
     margin: 30px;
   }
 
@@ -831,17 +1032,18 @@ footer {
     padding-top: 0px;
   }
 
-  .about > h1 {
+  .about>h1 {
     display: flex;
     font-size: 40px;
     justify-content: center;
   }
+
   .container-about {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  .grid > div {
+  .grid>div {
     width: 280px;
     height: 150px;
     margin: 10px;

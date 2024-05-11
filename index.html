@@ -16,6 +16,11 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.png" />
   <link rel="stylesheet" href="assets/styles/normalize.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -63,7 +68,7 @@
           A passionate software engineering student dedicated to mastering the
           intricacies of code and design.
         </p>
-        <div class="SOCIAL">
+        <div class="SOCIAL animate__animated animate__bounce">
           <a href="https://github.com/Roshen-Perera" target="_blank"><img class="social-icon"
               src="assets/icons/icons8-github-48.png" alt="github" /></a>
           <a href="https://www.linkedin.com/in/roshenperera/" target="_blank"><img class="social-icon"
@@ -74,8 +79,10 @@
               src="assets/icons/icons8-twitterx-50.png" alt="twitterx" /></a>
         </div>
 
-        <br />
-        <button class="button"><a href="#contact">Hire Me</a></button>
+        <br/>
+        <button data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="button"><a href="#contact">Hire Me</a></button>
       </div>
       <div class="rightsection">
         <svg class="animated" id="freepik_stories-coding" xmlns="http://www.w3.org/2000/svg"
@@ -849,7 +856,7 @@
       <h1>About<span class="head">&nbspMe</span></h1>
       <div class="container-about">
         <div class="aboutMe">
-          <section class="myself hiddenL">
+          <section data-aos="fade-right" class="myself hiddenL">
             <h2>A bit of my self</h2>
             <p>
               Hi, I’ m Roshen Perera, a Software Engineer from Sri Lanka. I
@@ -862,7 +869,7 @@
             </p>
           </section>
 
-          <section class="skills hiddenR">
+          <section data-aos="fade-left" class="skills hiddenR">
             <h2>My Skills</h2>
             <div class="about-icons">
               <i class="fa-brands fa-java fa-5x"></i>
@@ -878,21 +885,37 @@
 
       <div class="experience">
         <section class="hidden">
-          <h2>Assignments</h2>
-          <div class="container">
-            <div class="grid">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+          <h2>Certificates</h2>
+          <div data-aos="zoom-in" class="certificates-grid">
+            <div class="certificates">
+              <img src="assets/images/certificates/java-sololearn.jpg" alt=""/>
+              <div class="certificates-layer">
+                <h3>Stock Management System(CLI Based)</h3>
+                <p>This is a CLI based Stock Management System.</p>
+                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="certificates">
+              <img src="assets/images/certificates/java-sololearn.jpg" alt=""/>
+              <div class="certificates-layer">
+                <h3>Stock Management System(CLI Based)</h3>
+                <p>This is a CLI based Stock Management System.</p>
+                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="certificates">
+              <img src="assets/images/certificates/java-sololearn.jpg" alt=""/>
+              <div class="certificates-layer">
+                <h3>Stock Management System(CLI Based)</h3>
+                <p>This is a CLI based Stock Management System.</p>
+                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
             </div>
           </div>
         </section>
 
         <section class="hidden">
-          <h2>Certificates</h2>
+          <h2>Assignments</h2>
           <div class="container">
             <div class="grid">
               <div></div>
@@ -910,22 +933,22 @@
       <h1>Our&nbsp<span class="head">Services</span></h1>
       <div class="container">
         <div class="services-grid">
-          <div class="web box">
+          <div data-aos="fade-down-right" class="web box">
             <h3>Web Development</h3>
           </div>
-          <div class="android box">
+          <div data-aos="fade-down" class="android box">
             <h3>Android App Development</h3>
           </div>
-          <div class="ios box">
+          <div data-aos="fade-down-left" class="ios box">
             <h3>iOS App Development</h3>
           </div>
-          <div class="network box">
+          <div data-aos="fade-up-right" class="network box">
             <h3>Network Administration</h3>
           </div>
-          <div class="data box">
+          <div data-aos="fade-up" class="data box">
             <h3>Data Analysis</h3>
           </div>
-          <div class="business box">
+          <div data-aos="fade-up-left" class="business box">
             <h3>Business Analysis</h3>
           </div>
         </div>
@@ -934,7 +957,7 @@
 
     <div id="projects" class="projects hidden">
       <h1>My&nbsp<span class="head">Projects</span></h1>
-      <div class="project-grid">
+      <div data-aos="zoom-out" class="project-grid">
         <div class="project">
           <img src="assets/images/projects/stock.png" alt="" />
           <div class="project-layer">
@@ -1002,9 +1025,9 @@
         <div class="project">
           <img src="assets/images/projects/pos.png" alt="" />
           <div class="project-layer">
-            <h3>BookWorm Online Library</h3>
+            <h3>Web-based POS</h3>
             <p>
-              This is library management system which is made using hibernate
+              This is a web-base pos system 
             </p>
             <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -1062,12 +1085,15 @@
     </div>
     <section id="footblwsec" class="footblwsec">
       <h3>
-        © 2024. <span class="head"><span class="roshen">Roshen</span><span class="perera"> Perera</span></span>™.&nbspAll rights
+        © 2024. <span class="head"><span class="roshen">Roshen</span><span class="perera">
+            Perera</span></span>™.&nbspAll rights
         reserved.
       </h3>
     </section>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    AOS.init();
     function showSidebar() {
       const sidebar = document.querySelector(".sidebar");
       sidebar.style.display = "flex";
@@ -1085,5 +1111,4 @@
     };
   </script>
 </body>
-
 </html>
