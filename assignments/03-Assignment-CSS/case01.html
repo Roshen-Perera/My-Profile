@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheets" href="assets/normalize.css">
+    <style>
+    
+        #red{
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            position: absolute;
+        }
+        #green{
+            width: 50%;
+            height: 50%;
+            background-color: green;
+            position: absolute;
+
+            right: 0;
+        }
+        #orange{
+            width: 50%;
+            height: 50%;
+            background-color: orange;
+            position: absolute;
+
+            left: 0;
+            bottom: 0;
+        }
+        #pink{
+            width: 50%;
+            height: 50%;
+            background-color: deeppink;
+            position: absolute;
+
+            right: 0;
+            bottom: 0;
+        }
+/* ////////////////////////////////////////////////// */
+        #upleftcircle{
+            width: 25%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #uprightcircle{
+            width: 25%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #downleftcircle{
+            width: 25%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #downrightcircle{
+            width: 25%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+/* ////////////////////////////////////////////////// */
+        #upleftsquare{
+            width: 50%;
+            aspect-ratio: 1/1;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #uprightsquare{
+            width: 50%;
+            aspect-ratio: 1/1;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #downleftsquare{
+            width: 50%;
+            aspect-ratio: 1/1;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #downrightsquare{
+            width: 50%;
+            aspect-ratio: 1/1;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+/* ////////////////////////////////////////////////// */
+        #main-square{
+            width: 10%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #main-circle{
+            width: 50%;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+/* ////////////////////////////////////////////////// */
+
+        #upleftcircle-quarter{
+            width: 10%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            border-radius: 0% 0% 100% 0%;
+        }
+
+        #uprightcircle-quarter{
+            width: 10%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            border-radius: 0% 0% 0% 100%;
+            right: 0;
+        }
+
+        #downleftcircle-quarter{
+            width: 10%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            border-radius: 0% 100% 0% 0%;
+            left: 0;
+            bottom: 0;
+        }
+
+        #downrightcircle-quarter{
+            width: 10%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            border-radius: 100% 0% 0% 0%;
+            right: 0;
+            bottom: 0;
+        }
+
+    /* ////////////////////////////////////////////////// */
+        #downcircle-half{
+            width: 20%;
+
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            border-radius: 100%;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        
+        #upcircle-half{
+            
+        }
+    </style>
+</head>
+
+<body>
+        <div id="red">
+            <div id="upleftcircle">
+                <div id="upleftsquare"></div>
+            </div>
+        </div>
+        <div id="green">
+            <div id="uprightcircle">
+                <div id="uprightsquare"></div>
+            </div>
+        </div>
+        <div id="orange">
+            <div id="downleftcircle">
+                <div id="downleftsquare"></div>
+            </div>
+        </div>
+        <div id="pink">
+            <div id="downrightcircle">
+                <div id="downrightsquare"></div>
+            </div>
+        </div>
+
+        <div id="main-square">
+            <div id="main-circle"></div>
+        </div>
+
+        <div id="upleftcircle-quarter"></div>
+        <div id="uprightcircle-quarter"></div>
+        <div id="downleftcircle-quarter"></div>
+        <div id="downrightcircle-quarter"></div>
+
+        <div id="upcircle-half"></div>
+        <div id="downcircle-half"></div>
+</body>
+</html>
