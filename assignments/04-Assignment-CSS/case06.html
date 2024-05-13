@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 06</title>
+    <style>
+        body{
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .sky{
+            width: 100%;
+            height: 100vh;
+            background-image: url(assets/images/case06/sky.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .road{
+            width: 500%;
+            height: 180px;
+            position: absolute;
+            display: block;
+            bottom: 0px;
+            background-image: url(assets/images/case06/road.jpg);
+            animation: road-animation 5s linear infinite;
+        }
+
+        @keyframes road-animation {
+            100%{
+                transform: translateX(-3400px);
+            }
+        }
+
+        .city{
+            width: 500%;
+            height: 250px;
+            position: absolute;
+            display: block;
+            bottom: 180px;
+            background-image: url(assets/images/case06/city.png);
+            animation: road-animation 20s linear infinite;
+        }
+
+        .car>img{
+            width: 300px;
+            height: 140px;
+            left: 530px;
+            bottom: 80px;
+            position: absolute;
+        }
+
+        .front-wheel>img{
+            width: 50px;
+            aspect-ratio: 1/1;
+            left: 742px;
+            bottom: 94px;
+            position: absolute;
+            animation: wheel 1s linear infinite;
+        }
+        .rear-wheel>img{
+            width: 50px;
+            aspect-ratio: 1/1;
+            left: 559px;
+            bottom: 94px;
+            position: absolute;
+            animation: wheel 1s linear infinite;
+        }
+
+        @keyframes wheel {
+            100%{
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="sky">
+            <div class="road"></div>
+            <div class="city"></div>
+            <div class="car">
+                <img src="assets/images/case06/car.png" alt="car">
+                <div class="wheels">
+                    <div class="front-wheel"><img src="assets/images/case06/wheel.png" alt="wheel"></div>
+                    <div class="rear-wheel"><img src="assets/images/case06/wheel.png" alt="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

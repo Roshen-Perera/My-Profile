@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheets" href="assets/normalize.css"> 
+    <title>Case 03</title>
+    <style>
+        
+        body{
+            overflow: hidden;
+        }
+
+        div{
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: blueviolet;
+            animation: color-animation 8s infinite;
+            animation-direction: alternate;
+            
+        }
+
+        @keyframes color-animation {
+        
+            0%{
+                background-color: blue;
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(180deg);
+            }
+            25%{
+                background-color: yellow;
+                margin-left: calc(99vw - 100px);
+                margin-top: 0;
+                transform: rotate(0deg);
+            }
+            50%{
+                background-color: red;
+                margin-left: calc(99vw - 100px);
+                margin-top: calc(106vh - 100px);
+                transform: rotate(180deg);
+            }
+            75%{
+                background-color: deeppink;
+                margin-left: 0;
+                margin-top: calc(106vh - 100px);
+                transform: rotate(0deg);
+            }
+            100%{
+                background-color: orange;
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
