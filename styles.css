@@ -15,10 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-  font-family: 'Good Times Rg', sans-serif;
-
-}
 
 html {
   scroll-behavior: smooth;
@@ -28,6 +24,32 @@ html {
   margin: 0;
   padding: 0;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  cursor: pointer;
+  background: #00072c;
+  /* box-shadow: inset 0 0 1px grey; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  cursor: pointer;
+  background: aqua;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: yellow;
+}
+
+
 
 nav {
   background-color: #00072c;
@@ -278,8 +300,9 @@ a:active {
 }
 
 .roshenperera {
-  font-family: 'Rogue Hero', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
+  color: aqua;
+  font-family: "Komika Axis", sans-serif;
 }
 
 .roshen {
@@ -319,6 +342,7 @@ a:active {
 }
 
 .social-icon:hover {
+  color: aqua;
   transform: translateY(-20%);
 }
 
@@ -531,6 +555,19 @@ a:active {
   border-radius: 50%;
 }
 
+.certificates-layer a:hover {
+  box-shadow: aqua 0 1px 30px;
+  transition-duration: 0.3s;
+  background-color: aqua;
+  color: black;
+}
+
+.certificates-layer a:active {
+  background-color: yellow;
+  box-shadow: yellow 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
 /*fffffffffffffffff*/
 
 .assignments h1 {
@@ -542,7 +579,7 @@ a:active {
 
 .assignments-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
   margin: 50px;
 }
@@ -587,7 +624,7 @@ a:active {
   align-items: center;
   flex-direction: column;
   padding: 0 0.1rem;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: 0.5s ease;
 }
 
@@ -600,12 +637,12 @@ a:active {
 }
 
 .assignments-layer h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 .assignments-layer p {
-  font-size: 1rem;
+  font-size: .6rem;
   margin: 0.3rem 0 1rem;
   text-align: center;
 }
@@ -614,89 +651,40 @@ a:active {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 1.7rem;
+  height: 1.7rem;
   background-color: #ffffff;
   color: black;
   border-radius: 50%;
 }
 
+.assignments-layer a:hover {
+  box-shadow: aqua 0 1px 30px;
+  transition-duration: 0.3s;
+  background-color: aqua;
+  color: black;
+}
+
+.assignments-layer a:active {
+  background-color: yellow;
+  box-shadow: yellow 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
 /*Services*/
 
-.services {
-  padding-top: 100px;
-}
-
-.services>h1 {
-  display: flex;
+.service h1 {
+  padding-top: 6rem;
+  margin-bottom: 2rem;
   font-size: 40px;
-  justify-content: center;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-.web {
-  background: url(assets/images/services/web.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* length, cover, contain */
-  background-position: center;
-}
-
-.android {
-  background: url(assets/images/services/android.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* length, cover, contain */
-  background-position: center;
-}
-
-.ios {
-  background: url(assets/images/services/ios.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* length, cover, contain */
-  background-position: center;
-}
-
-.network {
-  background: url(assets/images/services/net.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* length, cover, contain */
-  background-position: center;
-}
-
-.data {
-  background: url(assets/images/services/data.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* length, cover, contain */
-  background-position: center;
-}
-
-.business {
-  background: url(assets/images/services/business.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* length, cover, contain */
-  background-position: center;
+  text-align: center;
 }
 
 .services-grid {
-  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.services-grid>div {
-  width: 350px;
-  height: 180px;
-  margin: 20px;
-  border-radius: 10px 10px 10px 10px;
+  gap: 2.5rem;
+  margin: 50px;
 }
 
 @media all and (max-width: 1200px) {
@@ -711,19 +699,72 @@ a:active {
   }
 }
 
-.box {
+.services-grid .services {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.services img {
+  width: 100%;
   transition: 0.5s ease;
 }
 
-.box:hover {
+/* .services:hover img {
+  width: 100%;
+} */
+
+.services .services-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), black);
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(1.1);
+  flex-direction: column;
+  padding: 0 0.1rem;
+  transform: translateY(-105%);
+  transition: 0.5s ease;
   cursor: pointer;
+}
+
+.services:hover .services-layer {
+  transform: translateY(0);
+}
+
+.services:active .services-layer {
+  transform: translateY(0);
+}
+
+.services:hover {
+  box-shadow: aqua 0 1px 30px;
+  transition-duration: 0.5s;
+}
+
+.services-layer h3 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.services-layer p {
+  font-size: 1rem;
+  margin: 0.3rem 0 1rem;
+  text-align: center;
+}
+
+.services-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 50%;
 }
 
 /*Projects*/
@@ -812,13 +853,28 @@ a:active {
 
 .project-layer a {
   display: inline-flex;
+  margin: 5px;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background-color: #ffffff;
   color: black;
   border-radius: 50%;
+  text-decoration: none;
+}
+
+.project-layer a:hover {
+  box-shadow: aqua 0 1px 30px;
+  transition-duration: 0.3s;
+  background-color: aqua;
+  color: black;
+}
+
+.project-layer a:active {
+  background-color: yellow;
+  box-shadow: yellow 0 1px 30px;
+  transition-duration: 0.1s;
 }
 
 .contact h1 {
@@ -956,11 +1012,6 @@ footer {
     font-size: 23px;
   }
 
-  .roshen {
-    font-family: "Komika Axis", sans-serif;
-    font-size: 40px;
-  }
-
   .cont .text {
     position: relative;
     font-size: 25px;
@@ -988,6 +1039,7 @@ footer {
 }
 
 @media all and (max-width: 375px) {
+
   .leftsection>h1 {
     margin-top: 20px;
     font-size: 30px;
@@ -1000,18 +1052,6 @@ footer {
 
   .leftsection {
     width: 280px;
-  }
-
-  .roshen {
-    font-family: "Komika Axis", sans-serif;
-    font-size: 30px;
-  }
-
-  .cont .text {
-    position: relative;
-    font-size: 20px;
-    color: aqua;
-    font-family: "Komika Axis", sans-serif;
   }
 
   .aboutMe {
@@ -1038,8 +1078,8 @@ footer {
   }
 
   .container-about {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
   }
 
   .grid>div {

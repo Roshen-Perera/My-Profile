@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,7 +34,7 @@
           <a href="https://roshen.serv00.net/"><img src="assets/images/roshen_logo.png" alt="logo" title="logo"></a>
         </li>
         <li class="hideOnMobile"><a href="#about">About</a></li>
-        <li class="hideOnMobile"><a href="#services">Services</a></li>
+        <li class="hideOnMobile"><a href="#service">Services</a></li>
         <li class="hideOnMobile"><a href="#projects">Projects</a></li>
         <li class="hideOnMobile"><a href="#contact">Contact Me</a></li>
         <li class="menu" onclick="showSidebar()">
@@ -45,7 +46,7 @@
           <a><i class="fa-solid fa-x fa-2x"></i></a>
         </li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#service">Services</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact Me</a></li>
         <li></li>
@@ -77,8 +78,7 @@
         </div>
 
         <br />
-        <button data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="button"><a
-            href="#contact">Hire Me</a></button>
+        <button class="button"><a href="#contact">Hire Me</a></button>
       </div>
       <div class="rightsection">
         <svg class="animated" id="freepik_stories-coding" xmlns="http://www.w3.org/2000/svg"
@@ -886,7 +886,7 @@
             <div class="certificates">
               <img src="assets/images/certificates/java-sololearn.jpg" alt="" />
               <div class="certificates-layer">
-                <h3>Stock Management System(CLI Based)</h3>
+                <h3>Introduction to JAVA</h3>
                 <p>This is a CLI based Stock Management System.</p>
                 <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
@@ -894,7 +894,7 @@
             <div class="certificates">
               <img src="assets/images/certificates/java-sololearn.jpg" alt="" />
               <div class="certificates-layer">
-                <h3>Stock Management System(CLI Based)</h3>
+                <h3>Introduction to SQL</h3>
                 <p>This is a CLI based Stock Management System.</p>
                 <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
@@ -902,7 +902,7 @@
             <div class="certificates">
               <img src="assets/images/certificates/java-sololearn.jpg" alt="" />
               <div class="certificates-layer">
-                <h3>Stock Management System(CLI Based)</h3>
+                <h3>Introduction to HTML</h3>
                 <p>This is a CLI based Stock Management System.</p>
                 <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               </div>
@@ -913,39 +913,89 @@
         <section class="hidden">
           <h2>Assignments</h2>
           <div class="container">
-            <div class="grid">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+            <div data-aos="zoom-in" class="assignments-grid">
+              <div class="assignments">
+                <img src="assets/images/projects/c4g.png" alt="" />
+                <div class="assignments-layer">
+                  <h3>Stock Management System(CLI Based)</h3>
+                  <p>This is a CLI based Stock Management System.</p>
+                  <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="assignments">
+                <img src="assets/images/projects/c4g.png" alt="" />
+                <div class="assignments-layer">
+                  <h3>Stock Management System(CLI Based)</h3>
+                  <p>This is a CLI based Stock Management System.</p>
+                  <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="assignments">
+                <img src="assets/images/projects/c4g.png" alt="" />
+                <div class="assignments-layer">
+                  <h3>Stock Management System(CLI Based)</h3>
+                  <p>This is a CLI based Stock Management System.</p>
+                  <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="assignments">
+                <img src="assets/images/projects/c4g.png" alt="" />
+                <div class="assignments-layer">
+                  <h3>Stock Management System(CLI Based)</h3>
+                  <p>This is a CLI based Stock Management System.</p>
+                  <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </div>
-    <div id="services" class="services hidden">
+    <div id="service" class="service hidden">
       <h1>Our&nbsp<span class="head">Services</span></h1>
       <div class="container">
-        <div class="services-grid">
-          <div data-aos="fade-down-right" class="web box">
-            <h3>Web Development</h3>
+        <div data-aos="zoom-out" class="services-grid">
+          <div class="services">
+            <img src="assets/images/services/android.jpg" alt="" />
+            <div class="services-layer">
+              <h3>Android Development</h3>
+              <p>This is a CLI based Stock Management System.</p>
+            </div>
           </div>
-          <div data-aos="fade-down" class="android box">
-            <h3>Android App Development</h3>
+          <div class="services">
+            <img src="assets/images/services/ios.png" alt="" />
+            <div class="services-layer">
+              <h3>iOS Development</h3>
+              <p>This is a CLI based Stock Management System.</p>
+            </div>
           </div>
-          <div data-aos="fade-down-left" class="ios box">
-            <h3>iOS App Development</h3>
+          <div class="services">
+            <img src="assets/images/services/web.jpg" alt="" />
+            <div class="services-layer">
+              <h3>Web Development</h3>
+              <p>This is a CLI based Stock Management System.</p>
+            </div>
           </div>
-          <div data-aos="fade-up-right" class="network box">
-            <h3>Network Administration</h3>
+          <div class="services">
+            <img src="assets/images/services/net.jpg" alt="" />
+            <div class="services-layer">
+              <h3>Network Administration</h3>
+              <p>This is a CLI based Stock Management System.</p>
+            </div>
           </div>
-          <div data-aos="fade-up" class="data box">
-            <h3>Data Analysis</h3>
+          <div class="services">
+            <img src="assets/images/services/data.jpg" alt="" />
+            <div class="services-layer">
+              <h3>Data Analysis</h3>
+              <p>This is a CLI based Stock Management System.</p>
+            </div>
           </div>
-          <div data-aos="fade-up-left" class="business box">
-            <h3>Business Analysis</h3>
+          <div class="services">
+            <img src="assets/images/services/business.webp" alt="" />
+            <div class="services-layer">
+              <h3>Business Analysis</h3>
+              <p>This is a CLI based Stock Management System.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -955,56 +1005,18 @@
       <h1>My&nbsp<span class="head">Projects</span></h1>
       <div data-aos="zoom-out" class="project-grid">
         <div class="project">
-          <img src="assets/images/projects/stock.png" alt="" />
-          <div class="project-layer">
-            <h3>Stock Management System(CLI Based)</h3>
-            <p>This is a CLI based Stock Management System.</p>
-            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="assets/images/projects/c4g.png" alt="" />
-          <div class="project-layer">
-            <h3>Connect 4 Game</h3>
-            <p>This is a CLI based Stock Management System.</p>
-            <a href="https://github.com/Roshen-Perera/Connect-4-Game" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="assets/images/projects/jayabima.png" alt="" />
-          <div class="project-layer">
-            <h3>Hardware Management System</h3>
-            <p>
-              This is a hardware store management system made using MVC
-              Architecture.
-            </p>
-            <a href="https://github.com/Roshen-Perera/Hardware-Store-Management-System-MVC-Architecture"
-              target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="assets/images/projects/jayabima.png" alt="" />
-          <div class="project-layer">
-            <h3>Hardware Management System(Layered Architecture)</h3>
-            <p>
-              This is a hardware store management system made using Layered
-              Architecture.
-            </p>
-            <a href="https://github.com/Roshen-Perera/Hardware-Store-Management-System-Layered-Architecture"
-              target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project">
           <img src="assets/images/projects/zenchat.png" alt="" />
           <div class="project-layer">
-            <h3>Live Chat Application</h3>
+            <h3>BookWorm Online Library</h3>
             <p>
-              This is a live chat Application made using client-server
-              Architecture.
+              This is library management system which is made using hibernate
             </p>
-            <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div>
+              <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
+                  class="fa-solid fa-eye"></i></a>
+              <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
           </div>
         </div>
         <div class="project">
@@ -1014,19 +1026,27 @@
             <p>
               This is library management system which is made using hibernate
             </p>
-            <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div>
+              <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
+                  class="fa-solid fa-eye"></i></a>
+              <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
           </div>
         </div>
         <div class="project">
-          <img src="assets/images/projects/pos.png" alt="" />
+          <img src="assets/images/projects/zenchat.png" alt="" />
           <div class="project-layer">
-            <h3>Web-based POS</h3>
+            <h3>BookWorm Online Library</h3>
             <p>
-              This is a web-base pos system
+              This is library management system which is made using hibernate
             </p>
-            <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div>
+              <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
+                  class="fa-solid fa-eye"></i></a>
+              <a href="https://github.com/Roshen-Perera/Live-Chat-Application" target="_blank"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -1034,8 +1054,10 @@
     <div id="contact" class="contact hidden">
       <h1>Contact&nbsp<span class="head">Me</span></h1>
       <form action="#">
-        <input type="text" id="fname" placeholder="First Name" />
-        <input type="text" id="lname" placeholder="Last Name" />
+        <div class="fullName">
+          <input type="text" id="fname" placeholder="First Name" />
+          <input type="text" id="lname" placeholder="Last Name" />
+        </div>
         <input type="email" id="email" placeholder="Email Address" />
         <input type="number" id="number" placeholder="Mobile Number" />
         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
@@ -1087,6 +1109,7 @@
       </h3>
     </section>
   </footer>
+  <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
