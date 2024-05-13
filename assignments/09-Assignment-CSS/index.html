@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight Rider</title>
+    <style>
+
+        body{
+            background: black;
+        }
+
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: palevioletred;
+            margin-bottom: 200px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .container>div{
+            width: 100px;
+            height: 50px;
+            margin: 5px;
+            background-color: white;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .button>button{
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: salmon;
+            font-weight: bolder;
+            font-size: 15px;
+            color: aliceblue;
+            border: none;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .line{
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Knight Rider</h1>
+    <div class="line">
+        <hr>
+        <div class="container">
+            <div class="light" id="light1"></div>
+            <div class="light" id="light2"></div>
+            <div class="light" id="light3"></div>
+            <div class="light" id="light4"></div>
+            <div class="light" id="light5"></div>
+            <div class="light" id="light6"></div>
+        </div>
+        <hr>
+    </div>
+    
+    <div class="button">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    <audio id="audio" loop>
+        <source src="audio/audio.mp3" type="audio/mp3">
+    </audio>
+<script src="lib/jquery-3.7.1.min.js"></script>
+<script>
+    
+    var current_light_index = 0;
+    var max_light_count = 6;
+    var move = "RIGHT"
+
+    function updateLightPanel() {
+        $(".light").css({background: "white"});
+        $(".light").eq(current_light_index).css({background: "red"});
+
+        if(move === "RIGHT"){
+            if(current_light_index !== 0) $(".light").eq(current_light_index - 1).css({background: "hotpink"});
+            $(".light").eq(current_light_index + 1).css({background: "hotpink"})
+            ++current_light_index;
+            if(current_light_index > max_light_count - 2){
+                move = "LEFT"
+            }
+        } else {
+            $(".light").eq(current_light_index + 1).css({background: "hotpink"});
+            $(".light").eq(current_light_index - 1).css({background: "hotpink"})
+            --current_light_index;
+            if(current_light_index === 0){
+                move = "RIGHT";
+            }
+        }
+    }
+
+    $('#start').on('click', () => {
+        myInterval = setInterval(updateLightPanel, 500);
+        $("audio")[0].play();
+    });
+
+    $('#stop').on('click', () => {
+        clearInterval(myInterval);
+        $("audio")[0].pause();
+    });
+</script>
+</body>
+</html>

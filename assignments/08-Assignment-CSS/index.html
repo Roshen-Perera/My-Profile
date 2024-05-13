@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-Assignment-CSs</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+        body {
+            background-color: #00051e;
+            font-family: "Outfit";
+        }
+
+        .grid {
+            gap: 1rem;
+            display: grid;
+            justify-content: end;
+            align-items: center;
+            grid-template-columns: repeat(2, 3fr);
+        }
+
+        div>a{
+            text-decoration: none;
+            color: white;    
+        }
+
+        div>a>div {
+            margin: 10px;
+            height: 180px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        div>a>div:hover {
+            box-shadow: aqua 0 1px 30px;
+            transition-duration: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: white; text-align: center; margin-top: 50px; margin-bottom: 50px;">04-Assignment-CSS</h1>
+    <div class="grid">
+        <a href="JSQue1.html" target="_blank"><div>JS Que 01</div></a>
+        <a href="JSQue2.html" target="_blank"><div>JS Que 02</div></a>
+</body>
+</html>

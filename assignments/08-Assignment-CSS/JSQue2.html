@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(49, 61, 83);
+        }
+
+        h1{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: gainsboro;
+        }
+
+        .box{
+            margin: 100px;
+        }
+        .mid{
+            display: flex;
+            justify-content: center;
+        }
+
+        .up{
+            display: flex;
+            justify-content: start;
+        }
+
+        .down{
+            display: flex;
+            justify-content: end;
+        }
+
+        .mid-box{
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+
+        .button>button{
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: salmon;
+            font-weight: bolder;
+            font-size: 15px;
+            color: aliceblue;
+            border: none;
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Queue</h1>
+    <div class="box">
+        <div class="up">
+            <div id="color1" class="mid-box"></div>
+        </div>
+        <hr>
+        <div class="mid">
+            <div id="color2" class="mid-box"></div>
+            <div id="color3" class="mid-box"></div>
+            <div id="color4" class="mid-box"></div>
+            <div id="color5" class="mid-box"></div>
+        </div>
+        <hr>
+        <div class="down">
+            <div id="color6" class="mid-box"></div>
+        </div>
+    </div>
+    <div class="button">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        var colorArray = ["red", "green", "blue", "yellow", "pink", "violet"];
+
+        $("#color1").css("background-color", colorArray[0]);
+        $("#color2").css("background-color", colorArray[1]);
+        $("#color3").css("background-color", colorArray[2]);
+        $("#color4").css("background-color", colorArray[3]);
+        $("#color5").css("background-color", colorArray[4]);
+        $("#color6").css("background-color", colorArray[5]);
+
+        var myInterval = null;
+
+        function replaceColors(){
+            let lastValue = colorArray.pop();
+            colorArray.unshift(lastValue);
+
+            $("#color1").css("background-color", colorArray[0]);
+            $("#color2").css("background-color", colorArray[1]);
+            $("#color3").css("background-color", colorArray[2]);
+            $("#color4").css("background-color", colorArray[3]);
+            $("#color5").css("background-color", colorArray[4]);
+            $("#color6").css("background-color", colorArray[5]);
+        }
+
+        $("#start").on('click', () => {
+            myInterval = setInterval(replaceColors, 2000)
+        });
+
+        $("#stop").on('click', () => {
+            clearInterval(myInterval);
+        });
+    </script>
+</body>
+</html>
