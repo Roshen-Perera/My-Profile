@@ -350,6 +350,26 @@ a:active {
   transform: scale(1.1);
 }
 
+.rightsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image > img{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-color: aqua;
+  transition-duration: 0.3s;
+}
+
+.hero-image > img:hover {
+  box-shadow: aqua 0 1px 30px;
+  transition-duration: 0.3s;
+}
+
 @media all and (max-width: 768px) {
   .home {
     display: grid;
